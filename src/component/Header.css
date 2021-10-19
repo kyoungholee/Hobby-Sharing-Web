@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  border: 0;
+}
+.header {
+  border: 1px solid red;
+  background-color: white;
+  height: 86px;
+  padding: 20px 0;
+  margin: 0 32px;
+  display: flex;
+  justify-content: space-between;
+}
+.header .search input {
+  margin: 20px;
+  height: 50px;
+  width: 800px;
+  background: rgb(248, 248, 249);
+  border: 1px solid rgb(248, 248, 249);
+  border-radius: 24px;
+  padding: 12px 52px 12px 16px;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 20px;
+  margin: 0px;
+  letter-spacing: -0.15px;
+  box-sizing: border-box;
+  text-align: left;
+  color: black;
+}
+
+.header .information {
+  display: flex;
+  justify-content: space-around;
+  float: right;
+}
+.header .information {
+  list-style: none;
+  padding: 13px 4px;
+}
+.header .information li {
+  padding: 0 10px;
+}
