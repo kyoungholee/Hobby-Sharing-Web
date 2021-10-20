@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.category {
+  border: 1px solid purple;
+  height: 3rem;
+  margin: 0 32px;
+}
+.category ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 8px 0 44px;
+  margin-top: 20px;
+  font-size: 15px;
+  line-height: 24px;
+  letter-spacing: -0.3px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-weight: bold;
+  white-space: nowrap;
+  align-items: center;
+  cursor: pointer;
+}
+.category ul .Popularity {
+  color: orange;
+}
