@@ -4,4 +4,6 @@
 }
 .Main {
   border: 1px solid black;
+  margin: 0 32px;
+  height: 80rem;
 }

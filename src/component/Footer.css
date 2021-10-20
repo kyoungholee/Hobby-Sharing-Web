@@ -4,4 +4,10 @@
 }
 .Footer {
   border: 1px solid green;
+  height: 5rem;
+  margin: 0 32px;
+}
+.Footer ul {
+  list-style: none;
+  display: block;
 }

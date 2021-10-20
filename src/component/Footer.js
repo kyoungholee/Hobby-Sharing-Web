@@ -5,7 +5,16 @@ function footer() {
     return (
     <>    
         <div className = "Footer">
-            가장 밑 부분
+            <ul>
+                <li>
+                    프로젝트에 관한 소개 글 작성하기!! 
+                    고객센터 문의 
+                    프로젝트 명 소개 
+                    교육 프로그램 
+                    채용 
+                    도움말
+                </li>
+            </ul> 
         </div>
     </>
     )
