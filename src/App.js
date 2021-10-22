@@ -5,6 +5,7 @@ import Main from "./component/Main";
 import Footer from "./component/Footer";
 import Login from "./component/User/Login";
 import {BrowserRouter, Route, Switch} from 'react-router-dom';
+import PopularItem from "./component/PopularItem";
 
 
 function App() {
@@ -16,7 +17,7 @@ function App() {
           <Category />
 
           <Switch>
-      
+          <PopularItem/>
           <Route path = "/">
           <Main />
           </Route>
