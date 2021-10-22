@@ -1,19 +1,25 @@
 import React from 'react'
 import dummy from '../DB/Item.json';
+import './ItemList.css';
 
 function ItemList() {
-    console.log(dummy)
+
     return (
-        <div>
+        <>
+        <div className = "list">
             <ul>
                 {dummy.hobbys.map(item => (
-                    <li>
+                    <li key = {item.id}>
                         {item.id}
+                    <a className = "Name">
                         {item.name}
+                    </a>
                     </li>
+
                 ))}
             </ul>
         </div>
+        </>
     )
 }
 
