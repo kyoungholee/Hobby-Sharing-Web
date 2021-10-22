@@ -16,14 +16,12 @@ function App() {
           <Header />
           <Category />
 
-          <Switch>
-          <PopularItem/>
-          <Route path = "/">
-          <Main />
-          </Route>
-          </Switch>
+        
 
-          
+      
+          <PopularItem/>
+          <Main />
+      
           <Footer />
           
         </div>
