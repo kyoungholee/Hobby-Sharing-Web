@@ -16,9 +16,6 @@ function App() {
           <Header />
           <Category />
 
-        
-
-      
           <PopularItem/>
           <Main />
       

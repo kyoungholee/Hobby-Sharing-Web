@@ -1,11 +1,25 @@
 import React from 'react'
+import dummy from "../DB/Winnter.json";
+import "./WnOutSideList.css";
 
 function WnOutSideList() {
     return (
-        <div>
-            
-        </div>
+        <>
+            <div className = "winterList">
+                <ul>
+                {dummy.Winnter.map(list => (
+                    <li key = {list.id}>
+                    <img src = {list.image} alt = {list.name} width = "250x" height = "300px"/>
+
+                        <div className = "name"> {list.name} </div>
+                    <div className = "explan">{list.explanation}</div>
+                    <div className = "price">{list.price}</div>
+                    </li>
+                ))}
+                </ul>
+            </div>
+        </>
     )
 }
 
-export default WnOutSideList
+export default WnOutSideList;
