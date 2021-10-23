@@ -5,5 +5,12 @@
 .Main {
   border: 2px solid blue;
   margin: 0 32px;
-  height: 80rem;
+  height: 240rem;
+}
+.Main h1 {
+  font-size: 18px;
+  font-weight: bold;
+  color: skyblue;
+  line-height: 26px;
+  letter-spacing: -0.45px;
 }
