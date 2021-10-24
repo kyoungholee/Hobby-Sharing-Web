@@ -7,6 +7,9 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }
+.winterList .images {
+  text-align: center;
+}
 .winterList ul li img {
   margin: 20px 24px;
 }
