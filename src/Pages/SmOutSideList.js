@@ -1,7 +1,8 @@
-import React from 'react'
+import React, {useState} from 'react'
 import './SmOutSideList.css';
 import dummy from "../DB/Summer.json";
 import Like from './Like';
+import Heart from './Heart';
 
 
 function SmOutSideList() {
@@ -29,6 +30,9 @@ function SmOutSideList() {
                         <p className = "price">{list.price}</p>
                         </div>
 
+                        <div>
+                        <Heart heart = { Heart} /> 
+                        </div>
                         </li>
                     ))}
                 </ul>

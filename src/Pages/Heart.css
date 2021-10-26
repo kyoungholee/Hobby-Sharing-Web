@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.heart {
+  position: relative;
+  bottom: 483px;
+  left: 304px;
+  margin: 0 auto;
+}
+.heart-btn {
+  color: red;
+  font-size: 24px;
+  cursor: pointer;
+}
