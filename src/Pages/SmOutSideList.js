@@ -1,15 +1,11 @@
-import React, { useState }  from 'react'
+import React from 'react'
 import './SmOutSideList.css';
 import dummy from "../DB/Summer.json";
+import Like from './Like';
 
 
 function SmOutSideList() {
 
-    const [number, setNumber] = useState(0);
-    
-    const onIncrease = () => {
-        setNumber(number + 1);
-    }
 
 
     return (
@@ -22,10 +18,16 @@ function SmOutSideList() {
                         <img src = {list.image} alt = {list.name} width = "260px" height = "340px"/>
                         </div>
                             <div className = "name"> {list.name} </div>
-                        <div className = "explan">{list.explanation}
-                            <button onClick = {onIncrease}>👍{number}</button>
+                        <div className = "explan">{list.explanation}</div>
+
+                        <div className = "like-btn">
+                        <Like like = {Like}  key = {list.id}/>
                         </div>
-                        <div className = "price">{list.price}</div>
+
+                        <div className = "discount">
+                        <p>{list.discount}</p>
+                        <p className = "price">{list.price}</p>
+                        </div>
 
                         </li>
                     ))}

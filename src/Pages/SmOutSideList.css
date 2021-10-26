@@ -37,13 +37,26 @@
   width: 60%;
   height: 9%;
 }
+.outsideList ul .discount {
+  justify-content: center;
+  display: flex;
+  color: #fd3049;
+  font-weight: 700;
+  font-size: 0.7125rem;
+  line-height: 1.125rem;
+}
+
 .outsideList ul .price {
-  text-align: center;
+  margin-left: 4px;
   color: orange;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 800;
   line-height: 20px;
   letter-spacing: 0.5px;
   overflow: hidden;
   margin-bottom: 10px;
+}
+
+.outsideList ul .like-btn {
+  text-align: center;
 }

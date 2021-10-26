@@ -5,7 +5,8 @@
             "name" : "스키",
             "explanation" : "추운 겨울 집에만 있지말고 스키를 배워보자!!",
             "image" : "https://w.namu.la/s/43a029ce3dd8fbd0ad45d637df70d7fb1f0e6a2eed8c97273f85c4d4f7497594efae8762cad522cf4b3c62260c4a927661d4295f62e1afa0797f1c53102f7770396f683ad1f25ad7876012ffed5d36db74b61bb9970af5ce56fcf2586a1edc0f",
-            "price" : "월 37,000원" 
+            "price" : "월 37,000원",
+            "discount" : "30%"
             
         },
         {
@@ -13,7 +14,8 @@
             "name" : "썰매",
             "explanation" : "가족 혹은 연인과 함께 썰매 타러가는 건 어때? ",
             "image" : "http://www.travelnbike.com/news/photo/201612/30326_27060_589.jpg",
-            "price" : "월 37,000원" 
+            "price" : "월 37,000원",
+            "discount" : "30%" 
             
         },
         {
@@ -21,7 +23,8 @@
             "name" : "스노우보드",
             "explanation" :"보드 배워서 따릿한 스릴을 느껴바!",
             "image" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtbvRDjMu3mV6KwQPYfGriXwtTh39CXCddwA&usqp=CAU",
-            "price" : "월 37,000원"
+            "price" : "월 37,000원",
+            "discount" : "30%"
             
         },
         {
@@ -29,14 +32,16 @@
             "name" : "스케이트",
             "explanation" : "실내 빙상장 가서 가족과 함께 타볼래? ",
             "image" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ196Yx-RIiqqdGit6eaZw9YfCCJDVWNHGO2A&usqp=CAU",
-            "price" : "월 37,000원"
+            "price" : "월 37,000원",
+            "discount" : "30%"
         },
         {
             "id" : "5",
             "name" : "겨울 낚시",
             "explanation" : "아빠와 함께 추운 겨울에 낚시에 맛을 즐겨바!",
             "image" : "http://www.womennews.co.kr/news/photo/201912/195217_313012_591.jpg",
-            "price" : "월 37,000원" 
+            "price" : "월 37,000원" ,
+            "discount" : "30%"
             
         },
         {
@@ -44,7 +49,8 @@
             "name" : "캠핑",
             "explanation" : "추운 겨울 집에만 있지말고 캠핑은 겨울이지!!",
             "image" : "https://t1.daumcdn.net/cfile/blog/992597435C2EB14F31",
-            "price" : "월 37,000원" 
+            "price" : "월 37,000원",
+            "discount" : "30%" 
             
         },
         {
@@ -52,7 +58,8 @@
             "name" : "차박",
             "explanation" : "차를 가지고 하루 여행을 가는 것도 나쁘지 않다.",
             "image" : "https://www.motorgraph.com/news/photo/202102/27167_86261_5522.jpg",
-            "price" : "월 37,000원" 
+            "price" : "월 37,000원",
+            "discount" : "30%" 
             
         },
         {
@@ -60,7 +67,8 @@
             "name" : "겨울 등산",
             "explanation" : "진정한 등산을 즐기는 사람은 겨울을 더 좋아하지.",
             "image" : "http://health.chosun.com/site/data/img_dir/2019/12/17/2019121702477_0.jpg",
-            "price" : "월 37,000원" 
+            "price" : "월 37,000원",
+            "discount" : "30%" 
             
         },
         {
@@ -68,7 +76,8 @@
             "name" : "겨울 라이딩",
             "explanation" : "춥다고 집에만 있지말고 오히려 운동해보자",
             "image" : "https://t1.daumcdn.net/cfile/tistory/99FC8D345C20CECC04",           
-            "price" : "월 37,000원" 
+            "price" : "월 37,000원" ,
+            "discount" : "30%"
             
         },
         {
@@ -76,7 +85,8 @@
             "name" : "호떡 만들기",
             "explanation" : "겨울엔 호떡이 최고지 맛있는 호떡 만들어 가자~",
             "image" : "https://t1.daumcdn.net/cfile/tistory/2309744855DBC95523",   
-            "price" : "월 37,000원" 
+            "price" : "월 37,000원",
+            "discount" : "30%" 
             
         },
         {
@@ -84,7 +94,8 @@
             "name" : "런닝",
             "explanation" : "추울 때 집에만 있지말고 런닝 동호회 들어가서 다 같이 운동하자!",
             "image" : "https://thumb.mt.co.kr/06/2019/11/2019112811181537259_3.jpg/dims/optimize/",
-            "price" : "월 37,000원" 
+            "price" : "월 37,000원",
+            "discount" : "30%" 
             
         },
         {
@@ -92,7 +103,8 @@
             "name" : "도마만들기",
             "explanation" : "집에서 쉬지만 말고 도마 만드는 취미는 어때? ",
             "image" : "https://mblogthumb-phinf.pstatic.net/MjAxODA4MTlfOTIg/MDAxNTM0NjA5ODA4OTQy.9MVgtbuo1IGS6OCx50n0FbBaFm4ftvMfBLmPE2u3anEg.1HPu3SDl8QU7a_W-gjhhtZYA1JAcqnr5hKK6EMOwKkEg.JPEG.nodem612/20180818_095304.jpg?type=w800",
-            "price" : "월 37,000원" 
+            "price" : "월 37,000원",
+            "discount" : "30%" 
             
         }
         

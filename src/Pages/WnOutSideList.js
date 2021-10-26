@@ -1,6 +1,8 @@
 import React from 'react'
 import dummy from "../DB/Winnter.json";
 import "./WnOutSideList.css";
+import Like from './Like';
+
 
 function WnOutSideList() {
     return (
@@ -15,7 +17,15 @@ function WnOutSideList() {
 
                         <div className = "name"> {list.name} </div>
                     <div className = "explan">{list.explanation}</div>
-                    <div className = "price">{list.price}</div>
+
+                    <div className = "like-btn">
+                    <Like like = {Like}  key = {list.id}/>
+                    </div>
+
+                        <div className = "discount">
+                            <p>{list.discount}</p>
+                            <p className = "price">{list.price}</p>
+                        </div>
                     </li>
                 ))}
                 </ul>

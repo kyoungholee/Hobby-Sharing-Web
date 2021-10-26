@@ -29,6 +29,15 @@
   text-align: center;
   margin: 0 auto;
 }
+.winterList ul .discount {
+  justify-content: center;
+  display: flex;
+  color: #fd3049;
+  font-weight: 700;
+  font-size: 0.7125rem;
+  line-height: 1.125rem;
+}
+
 .winterList ul .price {
   text-align: center;
   color: orange;
@@ -37,4 +46,8 @@
   line-height: 20px;
   letter-spacing: 0.5px;
   overflow: hidden;
+}
+
+.winterList ul .like-btn {
+  text-align: center;
 }

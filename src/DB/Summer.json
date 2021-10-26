@@ -5,7 +5,8 @@
             "name" : "수영",
             "explanation" : "더운 살 빼고 싶을 땐 수영장을 가서 수영을 취미로 배워보는 건 어떤가요? ",
             "image" : "https://post-phinf.pstatic.net/MjAxODA2MjBfMjM1/MDAxNTI5NDc5OTQ1MTY4.Yw9Zo1maKLa_sPtN8A7tEUgbt8Zk3K21GeJrq1Z9oLQg.8g4MRp5dKV3vHErZf8x4di9GkUBDdfIBcduztYsin2cg.JPEG/%EC%88%98%EC%98%81%EC%9E%A5.jpg?type=w1200",
-            "price" : "월 37,000원" 
+            "price" : "월 37,000원" ,
+            "discount" : "30%"
             
         },
         {
@@ -13,14 +14,16 @@
             "name" : "수상스키",
             "explanation" : "한강에서 싸게 즐길 수 있는 해상 스키 취미로 배워보세요 동호회도 참여하시구 ~ ",
             "image" : "https://us.123rf.com/450wm/aroas/aroas1508/aroas150800011/43394974-%EC%88%98%EC%83%81-%EC%8A%A4%ED%82%A4-%EC%B6%94%EC%83%81%EC%A0%81-%EC%9D%B8-%EB%B2%A1%ED%84%B0-%EC%9D%BC%EB%9F%AC%EC%8A%A4%ED%8A%B8-%EB%A0%88%EC%9D%B4%EC%85%98.jpg?ver=6",
-            "price" : "월 37,000원" 
+            "price" : "월 37,000원",
+            "discount" : "30%"
         },
         {
             "id" : "3",
             "name" : "번지점프",
             "explanation" : "무더운 여름 ~ 더위를 날리기 위해 번지점프를 도전해 보세요!!",
             "image" : "https://previews.123rf.com/images/happymay/happymay1409/happymay140900185/31826877-%EB%B2%88%EC%A7%80-%EC%A0%90%ED%94%84-%EB%B2%A1%ED%84%B0-%EC%9D%BC%EB%9F%AC%EC%8A%A4%ED%8A%B8-%EB%A0%88%EC%9D%B4-%EC%85%98.jpg",
-            "price" : "월 37,000원" 
+            "price" : "월 37,000원",
+            "discount" : "30%" 
         },
         {
             
@@ -28,14 +31,16 @@
             "name" : "암벽등반",
             "explanation" : "여름에 집에만 계시지 마시고 짜릿한 암벽등반을 배워보면서 보람찬 하루를 살아요.",
             "image" : "https://t1.daumcdn.net/cfile/blog/213D7E4B59396AB30D",
-            "price" : "월 37,000원" 
+            "price" : "월 37,000원",
+            "discount" : "30%" 
         },
         {
             "id" : "5",
             "name" : "등산",
             "explanation" : "더운 여름 정산을 오르며 체력도 기르고 시원한 바람도 맞아봅시다.",
             "image" : "http://health.chosun.com/site/data/img_dir/2019/04/30/2019043001641_0.jpg",
-            "price" : "월 37,000원" 
+            "price" : "월 37,000원",
+            "discount" : "30%" 
 
         },
         {
@@ -43,70 +48,80 @@
             "name" : "열기구타기",
             "explanation": "열기구 타바요 ~ 시원한 바람을 맞으며",
             "image" : "https://www.travel.taipei/image/217397/1024x768",
-            "price" : "월 37,000원"  
+            "price" : "월 37,000원",
+            "discount" : "30%"  
         },
         {
             "id" : "7",
             "name" : "페러글라이딩",
             "explanation" : "시원한 바람을 맞으며 배워봅시다.",
             "image" : "https://blog.hmgjournal.com/images_n/contents/170601_paragliding01.jpg",
-            "price" : "월 37,000원"  
+            "price" : "월 37,000원",
+            "discount" : "30%"  
         },
         {
             "id" : "8",
             "name" : "차박",
             "explanation" : "열대아엔 차박이지!! 시원한 ~ 1박 어때?",
             "image" : "https://cdn.newscj.com/news/photo/202007/newscj_%EC%B2%9C%EC%A7%80%EC%9D%BC%EB%B3%B4_761794_794639_2954.jpg",
-            "price" : "월 37,000원"  
+            "price" : "월 37,000원",
+            "discount" : "30%"  
         },
         {
             "id" : "9",
             "name" : "캠핑",
             "explanation" : "무더운 여름 집에 있지말고 시원한 바람 맞으며 가족과 함께 캠핑 어때요?",
             "image" : "https://t1.daumcdn.net/cfile/tistory/99265E3B5D0332CF31",
-            "price" : "월 37,000원"  
+            "price" : "월 37,000원" ,
+            "discount" : "30%" 
         },
         {
             "id" : "10",
             "name" : "드라이브",
             "explanation" : "더운 주말 집에 있지말고 시원한 냉명 먹으로 드라이브 ㄱㄱ? ",
             "image" : "https://t1.daumcdn.net/cfile/tistory/996442355B7268010A",
-            "price" : "월 37,000원"  
+            "price" : "월 37,000원",
+            "discount" : "30%"  
         },
         {
             "id" : "11",
             "name" : "물놀이",
             "explanation" : "더운 여름엔 역시 물놀이지 !! 싼 가격을 찾아바 ~ ",
             "image" : "https://img6.yna.co.kr/etc/inner/KR/2015/06/25/AKR20150625061200030_01_i_P2.jpg",
-            "price" : "월 37,000원"  
+            "price" : "월 37,000원",
+            "discount" : "30%"  
         },
         {
             "id" : "12",
             "name" : "잠수",
             "explanation" : "잠수도 한 번 배워봐요.",
             "image": "https://src.hidoc.co.kr/image/lib/2019/7/8/20190708160005260_0.jpg",
-            "price" : "월 37,000원"  
+            "price" : "월 37,000원",
+            "discount" : "30%" 
         },
         {
             "id" : "13",
             "name" : "제트스키",
             "explanation" : "여름에 한강에 놀러가서 제트스키 배워바요!.",
             "image" : "https://pds.joins.com/news/component/newsis/201305/01/NISI20130501_0008111293_web.jpg",
-            "price" : "월 37,000원"  
+            "price" : "월 37,000원" ,
+            "discount" : "30%" 
         },
         {
             "id" : "14",
             "name" : "해녀체험",
             "explanation" : "여름에 제주도로 휴가가서 해녀체험 배워보기.",
             "image" : "https://post-phinf.pstatic.net/MjAyMTA3MjBfMjcz/MDAxNjI2NzY3NTUxOTIz.92-ydE_mZK9k5sY1L387yoJw7XTlRFxczClb_yyYtjEg.3jly9OuMcGfabJxtsJ4QwmcAhFEQep_lT9p6pHl4MV4g.JPEG/%EC%A0%9C%EC%A3%BC%ED%95%B4%EB%85%80%EC%B2%B4%ED%97%987.jpeg?type=w1200",
-            "price" : "월 37,000원"  
+            "price" : "월 37,000원",
+            "discount" : "30%"  
         },
         {
             "id" : "15",
             "name" : "레저 스포츠",
             "explanation" : "친구들과 가평으로 레저 스포츠도 전문적으로 배워보기.",
             "image" : "https://newsimg.hankookilbo.com/cms/articlerelease/2016/07/15/201607151085773289_2.jpg",
-            "price" : "월 37,000원" 
+            "price" : "월 37,000원",
+            "discount" : "30%" 
         }
     ]
 }
