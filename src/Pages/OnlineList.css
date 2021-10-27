@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.OnlineList .Swiper {
+  font-size: 20px;
+  white-space: nowrap;
+  width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.OnlineList .Swiper .swiper-slide {
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+}
+.OnlineList .Swiper .arrow {
+  position: relative;
+  z-index: 10;
+  top: 50%;
+  cursor: pointer;
+}
+.OnlineList .Swiper .arrow .Left {
+  transform: translateY(85px);
+  width: 100px;
+}
+
+.OnlineList .Swiper .arrow .name {
+  text-align: center;
+  font-size: 100px;
+}
+
+.OnlineList .Swiper .arrow .right {
+  position: relative;
+  bottom: 64px;
+  transform: translateX(1124px);
+}
