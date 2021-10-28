@@ -3,35 +3,25 @@
   padding: 0;
 }
 .OnlineList .Swiper {
-  font-size: 20px;
   white-space: nowrap;
-  width: 1200px;
+  border: 2px solid silver;
   margin: 0 auto;
+  box-shadow: 0 0 20px #ccc inset;
   overflow: hidden;
 }
 .OnlineList .Swiper .swiper-slide {
-  display: inline-block;
-  vertical-align: middle;
-  width: 100%;
-}
-.OnlineList .Swiper .arrow {
-  position: relative;
-  z-index: 10;
-  top: 50%;
-  cursor: pointer;
-}
-.OnlineList .Swiper .arrow .Left {
-  transform: translateY(85px);
-  width: 100px;
-}
-
-.OnlineList .Swiper .arrow .name {
   text-align: center;
-  font-size: 100px;
+  display: inline-block;
+  align-items: center;
 }
 
-.OnlineList .Swiper .arrow .right {
+.OnlineList .Swiper .name {
+  font-size: 30px;
+}
+.OnlineList .Swiper .left {
+  position: absolute;
+  top: 500px;
+}
+.OnlineList .Swiper .right {
   position: relative;
-  bottom: 64px;
-  transform: translateX(1124px);
 }
