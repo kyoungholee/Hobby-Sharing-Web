@@ -23,12 +23,6 @@ function OnlineList() {
                     nextEl: nextRef.current ? nextRef.current : undefined,
                   }}
 
-            
-                  spaceBetween={50}
-                  slidesPerView={1}
-                  navigation ={{ clickable: true }}
-                  pagination={{ clickable: true }}
-                  autoplay={{ delay: 1000 }}
                 >
                     {dummy.online.map(list => (
 
@@ -40,12 +34,6 @@ function OnlineList() {
 
                     </SwiperSlide>
                         ))}
-                        <div ref={prevRef} className = "left">
-                            <img src = {left} alt = "left" width = "44px" height = "32px" />
-                        </div>
-                        <div ref={nextRef} className = "right">
-                            <img src = {right} alt = "right" width = "44px" height = "32px" />
-                        </div>
                 </Swiper>
             </div>
         </>

@@ -6,7 +6,7 @@ import Footer from "./component/Footer";
 import Login from "./component/User/Login";
 import {BrowserRouter, Route, Switch} from 'react-router-dom';
 import PopularItem from "./component/PopularItem";
-
+import Slider from './component/Slider/Slider';
 
 function App() {
   return (
@@ -15,8 +15,9 @@ function App() {
         <div className="App">
           <Header />
           <Category />
-
+ 
           <PopularItem/>
+          <Slider />
           <Main />
       
           <Footer />
