@@ -11,17 +11,19 @@ import Slider from './component/Slider/Slider';
 function App() {
   return (
     <>
-      <BrowserRouter>    
-        <div className="App">
+      <BrowserRouter> 
           <Header />
+
+
+          <Route path = "/">
           <Category />
- 
+          </Route>
+
           <PopularItem/>
           <Slider />
           <Main />
       
           <Footer />
-        </div>
       </BrowserRouter>
     </>
   );

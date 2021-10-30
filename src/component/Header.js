@@ -34,7 +34,7 @@ function Header() {
                             <li onClick = {goToCenter}>고객센터</li>
                         </ul>
                     </div> 
-                </div>
+            </div>
         </>
     )
 }

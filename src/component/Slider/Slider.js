@@ -1,7 +1,7 @@
-import React, {useState} from 'react'
-import './Slider.css'
-import BtnSlider from './BtnSlider'
-import dataSlider from './dataSlider'
+import React, {useState} from 'react';
+import './Slider.css';
+import BtnSlider from './BtnSlider';
+import dataSlider from './dataSlider';
 
 export default function Slider() {
 
@@ -24,21 +24,22 @@ export default function Slider() {
             setSlideIndex(dataSlider.length)
         }
     }
+
     return (
         <div className="container-slider">
             {dataSlider.map((obj, index) => {
                 return (
                     <div
                     key={obj.id}
-                    className={slideIndex === index + 1 ? "slide active-anim" : "slide"}
+                    className={slideIndex === index + 1 ? "slide active-anim" : "slide"} //이중 클래스 
                     >
-                        <img src={process.env.PUBLIC_URL + `/Imgs/whale${index + 1}.jpg`} 
+                        <img src={process.env.PUBLIC_URL + `/Imgs/hobby${index + 1}.jpg`} 
                         />
                     </div>
                 )
             })}
             <BtnSlider moveSlide={nextSlide} direction={"next"} />
-            
+
             <BtnSlider moveSlide={prevSlide} direction={"prev"}/>
 
         </div>

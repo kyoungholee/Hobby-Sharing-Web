@@ -5,13 +5,15 @@
 .header {
   border: 1px solid red;
   background-color: white;
-  height: 70px;
+  width: 1200px;
+  height: 40px;
+  z-index: 4;
   padding: 20px 0;
-  margin: 0 32px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
 }
-.header .search input {
+.search input {
   position: relative;
   margin: 20px;
   height: 3em;
