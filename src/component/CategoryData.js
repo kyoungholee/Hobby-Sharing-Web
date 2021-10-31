@@ -1,44 +1,66 @@
 
 import React from 'react';
-import * as FaIcons from 'react-icons/fa';
-import * as AiIcons from 'react-icons/ai';
-import * as IoIcons from 'react-icons/io';
 
 export const CategoryData = [
   {
-    title: 'Home',
+    title: '디지털 드로잉',
     path: '/',
-    icon: <AiIcons.AiFillHome />,
     cName: 'nav-text'
   },
   {
-    title: 'Reports',
+    title: '공예',
     path: '/reports',
-    icon: <IoIcons.IoIosPaper />,
     cName: 'nav-text'
   },
   {
-    title: 'Products',
+    title: '요리 , 음료',
     path: '/products',
-    icon: <FaIcons.FaCartPlus />,
     cName: 'nav-text'
   },
   {
-    title: 'Team',
+    title: '베이킹, 디저트',
     path: '/team',
-    icon: <IoIcons.IoMdPeople />,
     cName: 'nav-text'
   },
   {
-    title: 'Messages',
+    title: '음악',
     path: '/messages',
-    icon: <FaIcons.FaEnvelopeOpenText />,
     cName: 'nav-text'
   },
   {
-    title: 'Support',
+    title: '운동',
     path: '/support',
-    icon: <IoIcons.IoMdHelpCircle />,
+    cName: 'nav-text'
+  },
+  {
+    title: '사진 영상',
+    path: '/support',
+    cName: 'nav-text'
+  },
+  {
+    title: '라이프',
+    path: '/support',
+    cName: 'nav-text'
+  },
+  {
+    title: '등산',
+    path: '/support',
+    cName: 'nav-text'
+  },
+  {
+    title: '캠핑',
+    path: '/support',
+    cName: 'nav-text'
+  },
+  {
+    title: '작사,작곡',
+    path: '/support',
+    cName: 'nav-text'
+  },
+  {
+    title: '책쓰기',
+    path: '/support',
     cName: 'nav-text'
   }
+
 ];

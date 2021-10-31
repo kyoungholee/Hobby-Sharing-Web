@@ -3,7 +3,7 @@
   padding: 0;
 }
 .category {
-  background-color: skyblue;
+  background-color: #ff9dff;
   display: flex;
   justify-content: start;
   align-items: center;
@@ -21,6 +21,7 @@
 .nav-menu {
   background-color: #060b26;
   z-index: 10;
+  overflow: scroll;
   width: 180px;
   height: 100vh;
   display: flex;
@@ -40,9 +41,9 @@
   display: flex;
   justify-content: start;
   align-items: center;
-  padding: 8px 0px 8px 16px;
+  padding: 1px 4px;
   list-style: none;
-  height: 60px;
+  height: 47px;
 }
 
 .nav-text a {
@@ -83,6 +84,12 @@ span {
 .category-bar Link {
   padding: 10px;
   margin: 20px;
+}
+
+.category .category-bar a {
+  font-size: 15px;
+  margin-left: 64px;
+  text-decoration: none;
 }
 
 .category-bar .Popularity {

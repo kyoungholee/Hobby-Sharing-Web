@@ -52,7 +52,7 @@ function Category() {
                             })}
                 </ul>
             </nav>
-                    <div>
+                    <div className = "category-bar">
                     <Link to='#' className = "Popularity">
                     인기목록
                     </Link>
