@@ -5,6 +5,7 @@
 .outsideList ul {
   list-style: none;
   display: grid;
+  font-size: 11px;
   grid-template-columns: repeat(3, 1fr);
 }
 .outsideList ul li {
@@ -23,12 +24,11 @@
 }
 
 .outsideList ul .explan {
-  font-size: 11px;
   font-weight: 300;
   line-height: 20px;
   letter-spacing: -0.15px;
   color: black;
-  height: 20px;
+  height: 1.8rem;
   overflow: hidden;
   margin: 4px 2px;
   text-align: center;
@@ -42,14 +42,14 @@
   display: flex;
   color: #fd3049;
   font-weight: 700;
-  font-size: 0.7125rem;
+  font-size: 0.7rem;
   line-height: 1.125rem;
 }
 
 .outsideList ul .price {
   margin-left: 4px;
   color: orange;
-  font-size: 14px;
+  font-size: 1rem;
   font-weight: 800;
   line-height: 20px;
   letter-spacing: 0.5px;
@@ -59,4 +59,11 @@
 
 .outsideList ul .like-btn {
   text-align: center;
+}
+
+@media only screen and (max-width: 630px) {
+  .outsideList ul {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
 }

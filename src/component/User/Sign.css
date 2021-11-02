@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.Sign form {
+  display: flex;
+  font-size: 14px;
+  margin: 0 auto;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 150px;
+  height: 200px;
+}
+
+.Sign input {
+  border: 1px solid black;
+  align-items: center;
+}

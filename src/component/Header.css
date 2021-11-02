@@ -32,21 +32,20 @@
   color: black;
 }
 .header .search .bar_check {
-  position: absolute;
-  right: 427px;
-  top: 42px;
+  position: relative;
+  right: 63px;
+  top: 12px;
 }
-
 .header .information {
-  cursor: pointer;
   display: flex;
+  cursor: pointer;
   justify-content: space-around;
-  float: right;
+  float: left;
 }
-.header .information {
+.header .information a {
   list-style: none;
-  padding: 28px 4px;
-}
-.header .information li {
-  padding: 0 10px;
+  padding: 30px 14px;
+  text-decoration: none;
+  list-style: none;
+  color: black;
 }
