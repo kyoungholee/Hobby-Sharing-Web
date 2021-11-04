@@ -5,6 +5,7 @@ import {loginAction} from '../../store/actions/login';
 import { useHistory } from 'react-router';
 
 function Login() {
+    
 
     const dispatch = useDispatch();
     const history = useHistory();
@@ -18,6 +19,8 @@ const handleName = (e) => {
     setName(e.target.value)
 }
 
+
+
 const handleOnSubmit = (e) => {
     e.preventDefault();
 }
@@ -30,15 +33,18 @@ const handleLogin = () => {
     }
 
 
+
 //서버 통신으로 dispatch랑 redux를 넣어준다. 
 
 dispatch(
     loginAction({name : name})
+    
 ) 
 
-    history.push('/')
+    history.push('/Home')
 
 }
+console.log(setName)
 
 
     return (

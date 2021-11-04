@@ -9,6 +9,7 @@ import Slider from './component/Slider/Slider';
 import Sign from "./component/User/Sign";
 import { CategoryData } from "./component/CategoryData";
 import Login from "./component/User/Login";
+import Home from "./component/Home";
 
 function App() {
   return (
@@ -31,7 +32,11 @@ function App() {
                 </Route>
                 <Route path = "/Login">
                 <Login />
-              </Route>
+                </Route>
+
+                <Route path = "/Home" component = {Home}>
+                <Home />
+                </Route>
 
               </Switch>
               <Footer />

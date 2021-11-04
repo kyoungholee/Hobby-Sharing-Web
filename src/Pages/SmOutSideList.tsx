@@ -23,7 +23,7 @@ interface ISummber {
 }
 
 function SmOutSideList( {summber}: IProps) {
-
+    
     
 
     return (
