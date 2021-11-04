@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import './Heart.css';
 import {HeartOutlined, HeartFilled} from "@ant-design/icons";
 
-function Heart() {
+function Heart( {Heart}) {
 
     const [checked , setChecked] = useState(false);
 

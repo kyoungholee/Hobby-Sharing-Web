@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 
-function Like() {
+function Like( {Like}) {
     const [isShow, setIsShow] = useState(0);
 
     const toggleShow =  () => {

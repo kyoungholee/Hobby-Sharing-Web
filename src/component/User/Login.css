@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.Login form {
+  display: flex;
+  font-size: 14px;
+  margin: 0 auto;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 150px;
+  height: 200px;
+}
+
+.Login input {
+  border: 1px solid black;
+  align-items: center;
+}
+.Login button {
+  cursor: pointer;
+}

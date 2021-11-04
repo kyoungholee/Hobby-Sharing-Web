@@ -5,9 +5,26 @@ import Like from './Like';
 import Heart from './Heart';
 
 
-function SmOutSideList() {
+interface IProps {
+    summber :ISummber
 
+}
 
+interface ISummber {
+    "id" : number,
+    "name" : string,
+    "explanation" : string,
+    "image" : HTMLImageElement,
+    "price" : string ,
+    "discount" : string,
+    "Like" : string,
+    "Heart" : string;
+
+}
+
+function SmOutSideList( {summber}: IProps) {
+
+    
 
     return (
         <>    
@@ -22,7 +39,7 @@ function SmOutSideList() {
                         <div className = "explan">{list.explanation}</div>
 
                         <div className = "like-btn">
-                        <Like like = {Like}  key = {list.id}/>
+                        <Like Like = {Like}  key = {list.id}/>
                         </div>
 
                         <div className = "discount">
@@ -31,7 +48,7 @@ function SmOutSideList() {
                         </div>
 
                         <div>
-                        <Heart heart = { Heart} /> 
+                        <Heart Heart = { Heart} /> 
                         </div>
                         </li>
                     ))}
