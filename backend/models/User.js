@@ -11,6 +11,7 @@ const userSchema = mongoose.Schema({
     },
     email : {
         type : String,
+        maxlength : 50,
         trim : true,// 스페이스를 없애준다.
         unique: 1 
     },
@@ -39,6 +40,6 @@ const userSchema = mongoose.Schema({
 })
 
 
-const User = mongoose.model("User", userSchema)
+const User = mongoose.model("User", userSchema) //model로 감싸준다. 
 
 module.exports = {User}
