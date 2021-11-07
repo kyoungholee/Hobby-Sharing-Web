@@ -5,6 +5,8 @@
 
 .Login form {
   display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 14px;
   margin: 0 auto;
   flex-direction: column;

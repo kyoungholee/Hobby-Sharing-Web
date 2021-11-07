@@ -5,13 +5,16 @@ import {useDispatch} from 'react-redux';
 import {loginAction} from '../../store/actions/login';
 import { useHistory } from 'react-router';
 
-function Login() {
+function Login(props) {
     
 
     const dispatch = useDispatch();
     const history = useHistory();
 
-    const [name , setName] = useState("");
+    const [email , setEmail] = useState("");
+    const [password, setPassword] = useState("");
+
+
 
     useEffect(() => {
         axios.get('/api/hello')
@@ -24,36 +27,47 @@ function Login() {
     // 클릭을 했을때 액션과 dispatch가 reducer로 가서 스토어 안에 있는
     // 데이터들을 보여준다. 
 
-const handleName = (e) => {
-    setName(e.target.value)
+const handleEmail = (e) => {
+    setEmail(e.currentTarget.value)
 }
-
+const handlePassword = (e) => {
+    setPassword(e.currentTarget.value)
+}
 
 
 const handleOnSubmit = (e) => {
     e.preventDefault();
+
+
+    let body = {
+        email : email,
+        password : password
+        
+    }
+    
+    //서버 통신으로 dispatch랑 redux를 넣어준다. 
+
+    dispatch(loginAction(body))
+    .then (res => {
+        if(res.payload.loginSuccess) {
+            props.history.push('/')
+        } else {
+            alert("Error")
+        }
+    })
+    
+        history.push('/')
 }
 
 
 const handleLogin = () => {
-    if (!name) {
-        alert("닉네임을 입력해주세요");
+    if (!email) {
+        alert("이메일을 적어주세요 ~ ");
         return
     }
 
-
-
-//서버 통신으로 dispatch랑 redux를 넣어준다. 
-
-dispatch(
-    loginAction({name : name})
-    
-) 
-
-    history.push('/Home')
-
 }
-console.log(setName)
+console.log('email', email)
 
 
 
@@ -61,13 +75,20 @@ console.log(setName)
     return (
         <>
             <div className ="Login">
+
                 <form onSubmit = {handleOnSubmit}>
 
-                <label>닉네임</label>
-                <input type = "name" value = {name} onChange = {handleName} />
+                <label>이메일</label>
+                <input type = "email" value = {email} onChange = {handleEmail} />
+
+                <label>비밀번호</label>
+                <input type = "password" value = {password} onChange = {handlePassword} />
+
 
                 <button onClick = {handleLogin}>로그인</button>
                 </form>
+
+
             </div>
         </>
     )
