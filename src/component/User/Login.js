@@ -1,4 +1,5 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react';
+import axios from 'axios';
 import './Login.css';
 import {useDispatch} from 'react-redux';
 import {loginAction} from '../../store/actions/login';
@@ -11,6 +12,14 @@ function Login() {
     const history = useHistory();
 
     const [name , setName] = useState("");
+
+    useEffect(() => {
+        axios.get('/api/hello')
+        .then(response => console.log(response.data))
+    }, [])
+
+
+
 
     // 클릭을 했을때 액션과 dispatch가 reducer로 가서 스토어 안에 있는
     // 데이터들을 보여준다. 
@@ -45,6 +54,8 @@ dispatch(
 
 }
 console.log(setName)
+
+
 
 
     return (
