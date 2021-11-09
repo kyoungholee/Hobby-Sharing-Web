@@ -4,8 +4,9 @@ import {useHistory} from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import LogoImg from '../logo/Run.JPG';
 import searchImg from '../logo/search.JPG';
+import axios from 'axios';
 
-function Header() {
+function Header(props) {
 
     // const history = useHistory;
 
@@ -19,6 +20,17 @@ function Header() {
     // const goToCenter  = () => {
     //     history.push('/Center')
     // }
+
+    const onClickHandler = () => {
+        axios.get('/api/user/logout')
+        .then(res => {
+            if(res.data.success) {
+                props.history.push("/login")
+            } else {
+                alert ('로그아웃을 실패 했습니다. ')
+            }
+        })
+    }
 
     return (
         <>
@@ -34,6 +46,9 @@ function Header() {
                             <Link to = "/Center">고객센터</Link>
                     </div>
                
+                    <button onClick= {onClickHandler}>
+                     로그아웃
+                    </button>
             </div>
         </>
     )

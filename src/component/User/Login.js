@@ -4,6 +4,8 @@ import './Login.css';
 import {useDispatch} from 'react-redux';
 import {loginAction} from '../../store/actions/login';
 import { useHistory } from 'react-router';
+import { withRouter } from 'react-router-dom';
+
 
 function Login(props) {
     
@@ -48,9 +50,9 @@ const handleOnSubmit = (e) => {
     //서버 통신으로 dispatch랑 redux를 넣어준다. 
 
     dispatch(loginAction(body))
-    .then (res => {
+   .then (res => {
         if(res.payload.loginSuccess) {
-            props.history.push('/')
+            history.push('/')
         } else {
             alert("Error")
         }
@@ -94,4 +96,4 @@ console.log('email', email)
     )
 }
 
-export default Login;
+export default withRouter(Login);
