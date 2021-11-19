@@ -10,6 +10,7 @@ import Sign from "./component/User/Sign";
 import { CategoryData } from "./component/CategoryData";
 import Login from "./component/User/Login";
 import Home from "./component/Home";
+import ItemList2 from "./component/ItemList2";
 
 function App() {
   return (
@@ -17,12 +18,14 @@ function App() {
         <Router>
       
               <Header />
+
               <Switch>
 
                 <Route exact path = "/" >
                   <Category />
                   <PopularItem/>
                   <Slider />
+                  
                   <Main />
                 </Route>
 
