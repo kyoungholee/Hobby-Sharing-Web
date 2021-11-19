@@ -21,16 +21,16 @@ function Header(props) {
     //     history.push('/Center')
     // }
 
-    const onClickHandler = () => {
-        axios.get('/api/user/logout')
-        .then(res => {
-            if(res.data.success) {
-                props.history.push("/login")
-            } else {
-                alert ('로그아웃을 실패 했습니다. ')
-            }
-        })
-    }
+    // const onClickHandler = () => {
+    //     axios.get('/api/user/logout')
+    //     .then(res => {
+    //         if(res.data.success) {
+    //             props.history.push("/login")
+    //         } else {
+    //             alert ('로그아웃을 실패 했습니다. ')
+    //         }
+    //     })
+    // }
 
     return (
         <>
@@ -45,10 +45,6 @@ function Header(props) {
                             <Link to = "/Login" >로그인</Link>
                             <Link to = "/Center">고객센터</Link>
                     </div>
-               
-                    <button onClick= {onClickHandler}>
-                     로그아웃
-                    </button>
             </div>
         </>
     )

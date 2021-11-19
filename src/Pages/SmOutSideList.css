@@ -9,7 +9,6 @@
   grid-template-columns: repeat(3, 1fr);
 }
 .outsideList ul li {
-  border: 1px solid red;
 }
 .outsideList .images {
   text-align: center;
@@ -17,7 +16,6 @@
 
 .outsideList ul li img {
   padding: 22px 68px;
-  border: 1px solid red;
 }
 .outsideList ul .name {
   text-align: center;

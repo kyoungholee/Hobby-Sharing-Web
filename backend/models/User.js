@@ -101,7 +101,7 @@ userSchema.methods.generateToken = function(cb) {
 
     var token = jwt.sign(user._id.toHexString(), 'secretToken')
 
-    //user._id + 'secretToken' = token 토큰 만들기 
+    
 
     user.token = token
     user.save(function(err, user) {

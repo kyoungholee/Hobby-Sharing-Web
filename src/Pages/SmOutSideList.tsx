@@ -39,7 +39,7 @@ function SmOutSideList( {summber}: IProps) {
                         <div className = "explan">{list.explanation}</div>
 
                         <div className = "like-btn">
-                        <Like Like = {Like}  key = {list.id}/>
+                        <Like Like = {Like}  key = {list.id} />
                         </div>
 
                         <div className = "discount">

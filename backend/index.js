@@ -37,6 +37,9 @@ app.get('/api/hello', (req, res) => {
     res.send("안녕하세요~~");
 })
 
+
+
+
 //post 방식 즉 서버에게 데이터 정보를 보낸다. 
 app.post('/api/user/register', (req, res) => {
 
@@ -105,9 +108,7 @@ app.post('/api/user/login', (req, res) => {
           user.generateToken((err, user) => {
             if(err) return res.status(400).send(err);
 
-            //토큰을 (쿠키 혹은 로컬스토리지)에 저장 가능하다.
-
-            //쿠키에 저장
+           
             res.cookie("cookie_save", user.token)
             .status(200)
             .json({ loginSuccess : true , userId: user._id})
@@ -142,6 +143,8 @@ app.get('/api/user/auth', auth, (req, res) => {
 
 app.get('/api/user/logout', auth, (req, res) => {
     
+
+    //로그아웃 하려는 유저를 Db에서 찾아라 ~! 
     User.findOneAndUpdate({ _id: req.user._id}, 
         { token :"" },
         (err, user) => {
