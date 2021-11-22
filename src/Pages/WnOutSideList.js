@@ -2,6 +2,8 @@ import React from 'react'
 import dummy from "../DB/Winnter.json";
 import "./WnOutSideList.css";
 import Like from './Like';
+import {Link, useParams} from "react-router-dom";
+
 
 
 function WnOutSideList() {
@@ -11,6 +13,8 @@ function WnOutSideList() {
                 <ul>
                 {dummy.Winnter.map(list => (
                     <li key = {list.id}>
+
+                    <Link to = {`/winter/${list.id}`}>
                     <div className = "images">
                     <img src = {list.image} alt = {list.name} width = "250x" height = "300px"/>
                     </div>
@@ -26,6 +30,7 @@ function WnOutSideList() {
                             <p>{list.discount}</p>
                             <p className = "price">{list.price}</p>
                         </div>
+                        </Link>
                     </li>
                 ))}
                 </ul>

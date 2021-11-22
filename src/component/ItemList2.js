@@ -1,9 +1,16 @@
 import React from 'react'
 import {Grid } from 'semantic-ui-react';
 import './ItemList2.css';
-import {Link} from "react-router-dom";
+import {Link, useParams} from "react-router-dom";
+
+
 
 function ItemList2({ list }) {
+
+    
+// const a = useParams();
+// console.log(a);
+
     return (
         <div>
             <Grid >
@@ -13,7 +20,7 @@ function ItemList2({ list }) {
                 {list.map((item) => (
                     <Grid.Column>
 
-                    <Link to = {`/ItemList/${item.id}`}>
+                    <Link to = {`/${item.id}`}>
                         <img src = {item.image_link} alt = {item.name} />
 
                         <strong className = "list-name">{item.name}</strong>

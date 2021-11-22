@@ -11,6 +11,11 @@ import { CategoryData } from "./component/CategoryData";
 import Login from "./component/User/Login";
 import Home from "./component/Home";
 import ItemList2 from "./component/ItemList2";
+import DetailPage from "./component/DetailPage";
+import WnOutSideList from "./Pages/WnOutSideList";
+import WnList from "./Pages/WnList";
+import SmOutSideList from "./Pages/SmOutSideList";
+import SmList from "./Pages/SmList";
 
 function App() {
   return (
@@ -25,10 +30,25 @@ function App() {
                   <Category />
                   <PopularItem/>
                   <Slider />
-                  
-                  <Main />
+                  <SmOutSideList />
+                  <WnOutSideList />
+               
+                </Route>
+                
+                <Route path = "/winter/:id"> 
+                
+                <WnList />
                 </Route>
 
+                <Route path = "/summber/:id"> 
+                
+                <SmList/>
+                </Route>
+
+
+                <Route path = "/page/:id">
+                  <DetailPage />
+                </Route>
 
                 <Route path = "/Sign">
                   <Sign />

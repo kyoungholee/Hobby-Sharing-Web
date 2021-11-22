@@ -1,15 +1,17 @@
 import React,{useEffect, useState} from 'react'
 import './Main.css'
 //import SmOutSideList from '../Pages/SmOutSideList';
-//import WnOutSideList from '../Pages/WnOutSideList';
+
 import Axios from 'axios'
 import ItemList2 from './ItemList2';
+import DetailPage from './DetailPage';
 
 
 
 function Main() {
 
-    const [list, setList] = useState([])
+    const [list, setList] = useState([]);
+
 
     const API_URL = 
     "http://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline";
@@ -33,10 +35,11 @@ function Main() {
 
     return (
     <>    
-        <div className = "Main">
+        <div className = "Main"> 
 
 
             <ItemList2 list = { list }/>
+            <DetailPage list = { list } />
         </div>
     </>    
     )

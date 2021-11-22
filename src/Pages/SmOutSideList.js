@@ -3,26 +3,27 @@ import './SmOutSideList.css';
 import dummy from "../DB/Summer.json";
 import Like from './Like';
 import Heart from './Heart';
+import {Link } from "react-router-dom";
 
 
-interface IProps {
-    summber :ISummber
+// interface IProps {
+//     summber :ISummber
 
-}
+// }
 
-interface ISummber {
-    "id" : number,
-    "name" : string,
-    "explanation" : string,
-    "image" : HTMLImageElement,
-    "price" : string ,
-    "discount" : string,
-    "Like" : string,
-    "Heart" : string;
+// interface ISummber {
+//     "id" : number,
+//     "name" : string,
+//     "explanation" : string,
+//     "image" : HTMLImageElement,
+//     "price" : string ,
+//     "discount" : string,
+//     "Like" : string,
+//     "Heart" : string;
 
-}
+// }
 
-function SmOutSideList( {summber}: IProps) {
+function SmOutSideList() {
     
     
 
@@ -32,6 +33,8 @@ function SmOutSideList( {summber}: IProps) {
                 <ul>
                     {dummy.summber.map(list => (
                         <li key = {list.id}>
+
+                        <Link to = {`/summber/${list.id}`}>
                         <div className = "images">
                         <img src = {list.image} alt = {list.name} width = "260px" height = "340px"/>
                         </div>
@@ -50,6 +53,7 @@ function SmOutSideList( {summber}: IProps) {
                         <div>
                         <Heart Heart = { Heart} /> 
                         </div>
+                        </Link>
                         </li>
                     ))}
                 </ul>
