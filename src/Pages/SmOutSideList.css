@@ -4,11 +4,13 @@
 }
 .outsideList ul {
   list-style: none;
+  text-decoration: none;
   display: grid;
   font-size: 11px;
   grid-template-columns: repeat(3, 1fr);
 }
 .outsideList ul li {
+  text-decoration: none;
 }
 .outsideList .images {
   text-align: center;
@@ -19,6 +21,7 @@
 }
 .outsideList ul .name {
   text-align: center;
+  font-size: 1rem;
 }
 
 .outsideList ul .explan {

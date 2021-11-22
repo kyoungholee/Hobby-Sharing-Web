@@ -1,6 +1,6 @@
 import React from 'react';
 import dummy from "../DB/Winnter.json";
-import "./WnOutSideList.css";
+import "./SmList.css";
 import {useParams} from "react-router-dom";
 
 function WnList() {
@@ -12,15 +12,23 @@ const productList = dummy.Winnter.filter(list => list.id === id)
     return (
 
         <>
-            <div>
+            <div className = "night">
 
             <ul>
             {productList.map(list => (
                 <li key = {list.id}>
+                    
+                    <img src = {list.image} alt = {list.name} className = "product" width = "200px" height = "280px"/>
+                    <div className = "letter" >
+                    
+                        <strong>{list.name}</strong>
+                        <br />
+                        <strong className = "price">{list.price}</strong>
+                        <br />
+                        <strong>{list.explanation}</strong>
+                    </div>
 
-                    <div >{list.name} </div>
-                    <div>{list.explanation}</div>
-
+                    <button style = {{color : 'red'}} className = "cke">신청하기</button>
                 </li>
             ))}
             </ul>

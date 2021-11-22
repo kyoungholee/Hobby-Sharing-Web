@@ -35,7 +35,9 @@ function Header(props) {
     return (
         <>
             <div className = "header">
+                    <Link to = "/">
                     <img src = {LogoImg} width = "140px" height = "60px"/>
+                    </Link>
                     <div className="search">
                         <input type ="text" placeholder = "원하는 취미를 검색해보세요. "/>
                         <img src = {searchImg} className = "bar_check" />
